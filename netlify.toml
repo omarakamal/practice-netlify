@@ -1,0 +1,18 @@
+# [build]
+#   # no frontend build in this scratch version; omit or set to your app later
+#   publish = "."
+
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+  included_files = ["netlify/lib/**"]
+  external_node_modules = ["mongoose"]
+
+
+# API endpoints
+[[redirects]]
+  from = "/api/health"
+  to   = "/.netlify/functions/health"
+  status = 200
+  force = true
