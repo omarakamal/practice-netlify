@@ -50,7 +50,7 @@
   to   = "/.netlify/functions/me"
   status = 200
 
-  [[redirects]]
+[[redirects]]
   from = "/auth/seed"
   to   = "/.netlify/functions/seed"
   status = 200
