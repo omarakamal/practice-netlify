@@ -1,8 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../../Desktop/Normal Playground/dummy-netlfy/netlify/functions/health.js", "../../../../Desktop/Normal Playground/dummy-netlfy/netlify/lib/helpers/api-helpers.js"],
-  "sourceRoot": "C:/Users/omara/AppData/Local/Temp/tmp-30688-K61DNcE0F2NI",
-  "sourcesContent": ["\r\n\r\nimport { json } from \"../lib/helpers/api-helpers\";\r\n\r\n\r\n\r\nexport async function handler(event) {\r\n  console.log(event)\r\n  try {\r\n    if (event.httpMethod === \"GET\") {\r\n      return json(200, {message:'Success', parameters: event.multiValueQueryStringParameters});\r\n    }\r\n\r\n    if (event.httpMethod === \"POST\") {\r\n      return json(201, {message:'Created POST called'});\r\n    }\r\n\r\n    // if(event.httpMethod ==='DELETE'){\r\n      \r\n    // }\r\n\r\n\r\n\r\n  } catch (e) {\r\n    return json(500, { message: \"server error\", error: String(e) });\r\n}\r\n\r\n}\r\n\r\n\r\n", "export function json(status, body, header={}){\r\n  return {\r\n    statusCode: status,\r\n    headers: { \"Content-Type\": \"application/json\", ...header },\r\n    body: JSON.stringify(body)\r\n\r\n  }\r\n}\r\n\r\n"],
-  "mappings": ";;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;;;ACAO,SAAS,KAAK,QAAQ,MAAM,SAAO,CAAC,GAAE;AAC3C,SAAO;AAAA,IACL,YAAY;AAAA,IACZ,SAAS,EAAE,gBAAgB,oBAAoB,GAAG,OAAO;AAAA,IACzD,MAAM,KAAK,UAAU,IAAI;AAAA,EAE3B;AACF;;;ADDA,eAAsB,QAAQ,OAAO;AACnC,UAAQ,IAAI,KAAK;AACjB,MAAI;AACF,QAAI,MAAM,eAAe,OAAO;AAC9B,aAAO,KAAK,KAAK,EAAC,SAAQ,WAAW,YAAY,MAAM,gCAA+B,CAAC;AAAA,IACzF;AAEA,QAAI,MAAM,eAAe,QAAQ;AAC/B,aAAO,KAAK,KAAK,EAAC,SAAQ,sBAAqB,CAAC;AAAA,IAClD;AAAA,EAQF,SAAS,GAAG;AACV,WAAO,KAAK,KAAK,EAAE,SAAS,gBAAgB,OAAO,OAAO,CAAC,EAAE,CAAC;AAAA,EAClE;AAEA;",
-  "names": []
-}
