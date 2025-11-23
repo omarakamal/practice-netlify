@@ -2,7 +2,7 @@
   "name": "dummy-netlfy",
   "version": "1.0.0",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +17,11 @@
     "url": "https://github.com/omarakamal/practice-netlify/issues"
   },
   "homepage": "https://github.com/omarakamal/practice-netlify#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^9.0.0",
+    "zod": "^4.1.12"
+  }
 }
