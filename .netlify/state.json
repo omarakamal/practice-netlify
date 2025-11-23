@@ -1,0 +1,19 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "Manama",
+			"country": {
+				"code": "BH",
+				"name": "Bahrain"
+			},
+			"subdivision": {
+				"code": "13",
+				"name": "Manama"
+			},
+			"timezone": "Asia/Bahrain",
+			"latitude": 26.2235,
+			"longitude": 50.5813
+		},
+		"timestamp": 1763644123877
+	}
+}

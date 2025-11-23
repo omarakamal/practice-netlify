@@ -15,8 +15,16 @@ export async function handler(event) {
       return json(201, {message:'Created POST called'});
     }
 
+    // if(event.httpMethod ==='DELETE'){
+      
+    // }
+
+
+
   } catch (e) {
     return json(500, { message: "server error", error: String(e) });
 }
 
 }
+
+
